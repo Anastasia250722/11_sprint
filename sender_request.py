@@ -16,6 +16,7 @@ assert response_order.status_code==201  #проверяем, что статус
 
 print(response_order.status_code)
 print(response_order.json())
+print("Заказ создан")
 
 #2. Сохранение номера заказа
 track=response_order.json()["track"]
@@ -27,7 +28,6 @@ def get_order_track():
 response=get_order_track()
 
 print(response.status_code)
-print(response.json())
 
 #3. Проверяем, что код ответа равен 200
 
